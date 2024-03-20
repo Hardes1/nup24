@@ -12,6 +12,8 @@ public class NUP23CameraMove : MonoBehaviour {
 
     public Transform Target;
 
+    private Vector3 offset = new Vector3(0, 5, 5);
+
     void Start()
     {
         // _distance = Vector3.Distance(Target.position,transform.position);
@@ -24,6 +26,7 @@ public class NUP23CameraMove : MonoBehaviour {
 
     void Update()
     {
+        transform.position = Target.transform.position + offset;
         // Debug.Log(Time.deltaTime);
         // Debug.Log(Time.fixedDeltaTime);
         // Debug.Log(Time.smoothDeltaTime);
