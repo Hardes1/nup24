@@ -33,12 +33,12 @@ Shader "Custom/NUP24_Specular"
         {
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
             o.Albedo = c.rgb;
-            o.Alpha = c.a;
+            //o.Alpha = c.a;
 
             o.Smoothness = _Smoothness;
 
             //https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
-            //o.Metallic = half;
+            o.Metallic = _Metallic;
             //o.Emission = color;
         }
         ENDCG

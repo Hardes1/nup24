@@ -14,7 +14,7 @@ public class NUP23CameraMove : MonoBehaviour {
 
     void Start()
     {
-        _distance = Vector3.Distance(Target.position,transform.position);
+        // _distance = Vector3.Distance(Target.position,transform.position);
     }
 
     void FixedUpdate()
@@ -24,13 +24,16 @@ public class NUP23CameraMove : MonoBehaviour {
 
     void Update()
     {
-        Move(Time.deltaTime);
+        // Debug.Log(Time.deltaTime);
+        // Debug.Log(Time.fixedDeltaTime);
+        // Debug.Log(Time.smoothDeltaTime);
+        // Move(Time.deltaTime);
     }
 
     void Move(float dt)
     {
+        // transform.position += transform.up*dt;
 
-        // transform.position += Vector3.up*dt;
         // https://docs.unity3d.com/ScriptReference/Vector3.Cross.html
         // transform.position += Vector3.Cross(Vector3.up, Vector3.forward)*dt;
         // For normalized vectors Dot returns 1 if they point in exactly the same direction, -1 if they point in completely opposite directions and zero if the vectors are perpendicular.
@@ -43,10 +46,11 @@ public class NUP23CameraMove : MonoBehaviour {
         // transform.rotation = target;
 
         // Vector3 direction = (Target.position - transform.position).normalized;
+
+        // float d = Vector3.Distance(Target.position, transform.position);
+
+
         // transform.position += direction*dt;
-
-
-
         // transform.position += Vector3.up*dt;
 
         // transform.Rotate(0, 0, 2 * dt);
