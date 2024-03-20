@@ -23,11 +23,11 @@ public class ObjectController : MonoBehaviour
             Debug.unityLogger.Log("URA");
             if (_isDead)
             {
-                transform.Rotate(0, -90, 0);
+                transform.Rotate(-90, 0, 0);
             }
             else
             {
-                transform.Rotate(0, 90, 0);
+                transform.Rotate(90, 0, 0);
             }
             _isDead = !_isDead;
         }
