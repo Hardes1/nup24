@@ -1,8 +1,4 @@
-# @discord/embedded-app-sdk
-
-<p align="center">
-  <img src="/assets/discord-embedded-apps.svg" alt="Discord Embedded App SDK" />
-<p>
+#Release notes
 
 ### The Embedded App SDK enables you to build rich, multiplayer experiences inside Discord.
 
