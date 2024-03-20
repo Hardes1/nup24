@@ -1,4 +1,4 @@
-#Release notes
+# Release notes
 
 ### The Embedded App SDK enables you to build rich, multiplayer experiences inside Discord.
 
